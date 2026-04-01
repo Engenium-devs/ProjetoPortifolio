@@ -1,0 +1,17 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-image: linear-gradient(to bottom, #000000, #838383, #ffffff);
+}
+table {
+  color: white;
+  border: 1px solid;
+  margin: auto;
+}
+article {
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  text-align: center;
+}

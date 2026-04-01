@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: #E5E5E5;
+    font-family: 'Cabin', sans-serif;
+    font-optical-sizing: auto;
+}
+
+header {
+    background-color: #020632;
+    color: white;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+header h1{
+    font-size: 1.1rem;
+}
+
+header a {
+    text-decoration: none;
+    color: #E5E5E5;
+    font-size: 0.8rem;
+    font-weight: bold;
+    padding: 5px 5px 5px;
+    margin: 5px;
+    transition: background 0.2s ease;
+    border-radius: 5px;
+   
+}
+
+header a:hover{
+    background-color: #0E3CBE;
+    
+}
+
+section#apresentation {
+   background: linear-gradient(to bottom, #020632, #0A0F2C, #030923);
+   display: grid;
+   grid-template-columns: 2fr 2fr;
+   
+}
+
+img#perfil {
+    justify-content: left;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+
+}
+
+.text{
+    color: #E5E5E5;
+}
+
+
+.topics {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.7rem;
+    
+}
+
+.topics::before, .topics::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background-color: #ccc;
+   
+}
+
+.topics::after{
+    margin-left: 1rem;
+    margin-right: 5.6rem;
+
+}
+
+.topics::before{
+    margin-right: 1rem;
+    margin-left: 5.6rem;
+
+}
+
+span {
+    font-weight: bold;
+}
+
+
+
+main.biography{
+    gap: 1.5rem;
+    margin: 0 4rem 0 4rem;
+    padding: 20px;
+    background-color: white;
+    text-align: justify;
+
+}
+
+section{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    justify-items: center;
+    align-items: center;
+
+}
+
+section p {
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+}
+
+
+picture img{
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    max-width: 100%;
+
+}
+/* Aprender a usar unidades de medida corretamente */
+
+/*------------------------------ Projetos ----------------------------------*/
+div{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+main.projects{
+    background-color: white;
+    margin: 1rem 2rem 1rem 2rem;
+    padding: 3px 3px 10px 3px;
+    border-radius: 0;  
+    max-width: 300px;
+    
+}
+/* criar uma tag propria pra n ficar zerando o main principal */
+/* Os mains estão puxando uma coisa da outra */
+
+section.projects picture img{
+    max-width: 100%;
+}
+
+section.projects {
+
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    
+}
+
+section.projects h1{
+    font-size: 1.5rem;
+    margin: 1rem 0 2rem 0;
+
+}
+
+section.projects button{
+
+    background-color: #020632;
+    color: #E5E5E5;
+    font-weight: bolder ;
+    max-width: 5rem;
+    margin-bottom: 1rem;
+    padding: 10px;
+    border-radius: 3px;
+    border: none;
+    transition: 0.3s ease;
+}
+
+section.projects button:hover{
+    background-color: #E5E5E5;
+    color: #082061;
+    border: solid 1px #020632;
+}
+
+
+ 
