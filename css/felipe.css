@@ -47,8 +47,14 @@ header a:hover{
 section#apresentation {
    background: linear-gradient(to bottom, #020632, #0A0F2C, #030923);
    display: grid;
-   grid-template-columns: 2fr 2fr;
-   
+   grid-template-columns: 1fr 1fr;
+
+  
+}
+
+div.slogan {
+    display: flex;
+    flex-direction: column;
 }
 
 img#perfil {
@@ -59,7 +65,8 @@ img#perfil {
 
 }
 
-.text{
+
+.text {
     color: #E5E5E5;
 }
 
@@ -131,12 +138,16 @@ picture img{
 /* Aprender a usar unidades de medida corretamente */
 
 /*------------------------------ Projetos ----------------------------------*/
-div{
+main#projectsContainer{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    
 
 }
-main.projects{
+
+div.projectItem{
     background-color: white;
     margin: 1rem 2rem 1rem 2rem;
     padding: 3px 3px 10px 3px;
@@ -147,25 +158,23 @@ main.projects{
 /* criar uma tag propria pra n ficar zerando o main principal */
 /* Os mains estão puxando uma coisa da outra */
 
-section.projects picture img{
+section.projectContent picture img{
     max-width: 100%;
 }
 
-section.projects {
-
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-items: center;
+section.projectContent {
+    display: flex;
+    flex-direction: column;
     
 }
 
-section.projects h1{
+section.projectContent h1{
     font-size: 1.5rem;
     margin: 1rem 0 2rem 0;
 
 }
 
-section.projects button{
+section.projectContent button{
 
     background-color: #020632;
     color: #E5E5E5;
@@ -178,7 +187,7 @@ section.projects button{
     transition: 0.3s ease;
 }
 
-section.projects button:hover{
+section.projectContent button:hover{
     background-color: #E5E5E5;
     color: #082061;
     border: solid 1px #020632;
