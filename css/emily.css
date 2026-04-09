@@ -1,0 +1,194 @@
+
+
+:root {
+  /* Variáveis de tema */
+  --bg-color: #0d0d0d;              /* fundo do cabeçalho */
+  --border-color: #333333;          /* borda superior sutil */
+  --text-color: #e5e5e5;            /* cor do texto */
+  --highlight-color: #e5e5e5;       /* cor de sublinhado ativo */
+  --height-header: 72px;            /* altura fixa do cabeçalho */
+  --padding-horizontal: 20px;       /* preenchimento lateral */
+  --logo-font: 'Cinzel', serif;     /* fonte do logo (serif condensada) */
+  --nav-font: 'Roboto Condensed', sans-serif; /* fonte do menu (sem serifa) */
+  --font-size-logo: 24px;
+  --font-size-nav: 16px;
+  --underline-thickness: 2px;
+  --transition-speed: 0.3s;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: var(--height-header);
+  padding: 0 var(--padding-horizontal);
+  background-color: var(--bg-color);
+  border-top: 2px solid var(--border-color);
+  box-shadow: inset 0 2px 5px rgba(0,0,0,0.6); /* sombra interna discreta no topo */
+  display: flex;
+  align-items: center;
+  justify-content: center; /* centraliza o nav em relação ao header */
+  margin: 0;
+  padding: 0;
+}
+
+/* Logo à esquerda */
+.logo {
+  position: absolute;
+  left: var(--padding-horizontal);
+  font-family: var(--logo-font);
+  font-size: var(--font-size-logo);
+  color: var(--text-color);
+  line-height: var(--height-header);
+  text-transform: uppercase;
+}
+
+/* Menu de navegação */
+.nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: inline-flex;
+}
+
+.nav-list li {
+  margin: 0 12px;
+  position: relative;
+}
+
+/* Links do menu */
+.nav-list a {
+  display: inline-block;
+  font-family: var(--nav-font);
+  font-size: var(--font-size-nav);
+  color: var(--text-color);
+  text-decoration: none;
+  padding: 5px 10px;
+  text-align: center;
+  line-height: 1.2;
+  position: relative;
+  transition: color var(--transition-speed);
+}
+
+/* Animação de sublinhado ao hover/focus/ativo */
+.nav-list a::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 8px;
+  width: 0;
+  height: var(--underline-thickness);
+  background-color: var(--highlight-color);
+  border-radius: var(--underline-thickness);
+  transform: translateX(-50%);
+  transition: width var(--transition-speed);
+}
+.nav-list a:hover::before,
+.nav-list a:focus::before,
+.nav-list a.active::before {
+  width: 80%; /* sublinhado se expande a 80% da largura do texto */
+}
+
+/* Garante contorno visível em foco (WCAG 2.4.7) */
+.nav-list a:focus {
+  outline: 2px dotted var(--highlight-color);
+  outline-offset: 4px;
+}
+
+/* Responsividade: menu vertical em telas pequenas */
+@media (max-width: 768px) {
+  header { flex-direction: column; height: auto; }
+  .logo { position: static; margin-bottom: 10px; }
+  .nav-list {
+    flex-direction: column;
+    width: 100%;
+  }
+  .nav-list li {
+    margin: 5px 0;
+  }
+  .nav-list a {
+    padding: 10px;
+    line-height: normal;
+    width: 100%;
+    text-align: left;
+  }
+}
+body {
+    background: #000000 url(../assets/imagens/fundo-preto-e-roxo-9a0om5bk62fizm2m.jpg);
+    font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
+    line-height: 1.6;
+    background-size: cover; /* Ajusta a imagem para cobrir toda a tela */
+    background-repeat: no-repeat; /* Evita repetição da imagem */
+    background-position: center;
+}
+
+  .container {
+    margin: 0 auto;
+    width: 960px;
+  }
+
+  article {
+    float: left;
+    width: 660px;
+  }
+
+    article {
+      background-color: #40047c99;
+      border: 1px solid #ffffff;
+      border-color: #ffffff #ffffff #ffffff #ffffff;
+      margin-bottom: 20px; 
+      margin: 20px auto;
+  padding: 20px;
+  width: 90%;
+  border-radius: 20px;
+    }
+
+  article h2 {
+    border-bottom: 1px dashed #ffffff;
+    margin: 0;
+   
+  }
+
+  article a {
+    color: #b55fd5;
+    font-weight: bold;
+  }
+
+  article img {
+    border: 1px solid #ffffff;
+    float: left;
+    margin: 10px 10px 0 0;
+    padding: 2px;
+    width: 150px;
+     }
+
+  .clear {
+    clear: both;
+    
+  }
+ footer {
+    font-size: 12px;
+    text-align: center;  
+    color: #ffffff;
+  }
+
+  article {
+    border: 2px solid #ffffff; /* Borda preta */
+    border-radius: 10px;    /* Arredonda todos os cantos */
+  } 
+
+  h1 {
+    color: rgb(255, 255, 255); 
+  }
+  p {
+    color: rgb(255, 255, 255); 
+  }
+  h2 {
+    color: rgb(255, 255, 255); 
+  }
+  h3 {
+    color: rgb(255, 255, 255); 
+  }
+  ol {
+    color: rgb(255, 255, 255); 
+  }
