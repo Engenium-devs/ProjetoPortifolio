@@ -121,11 +121,11 @@ span.name{
 }
 
 .topics::before, .topics::after {
-    content: "";
-    flex: 1;
+    content: ""; 
+    flex: 1;     
     height: 1px;
     background-color: #ccc;
-   
+   /* estudar melhor sobre */
 }
 
 .topics::after{
@@ -187,6 +187,7 @@ main#projectsContainer{
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
     align-items: center;
+    margin-bottom: 4rem;
     
 
 }
@@ -202,9 +203,7 @@ div.projectItem{
 /* criar uma tag propria pra n ficar zerando o main principal */
 /* Os mains estão puxando uma coisa da outra */
 
-section.projectContent picture img{
-    max-width: 100%;
-}
+
 
 section.projectContent {
     display: flex;
@@ -217,6 +216,7 @@ section.projectContent h1{
     margin: 1rem 0 2rem 0;
 
 }
+
 
 section.projectContent button{
 
@@ -234,9 +234,55 @@ section.projectContent button{
 section.projectContent button:hover{
     background-color: #E5E5E5;
     color: #E53326;
-    
-    border-radius: 3px
+    border-radius: 3px;
+    transform: scale(1.2)
 }
+
+footer{
+    background-color: #1A1B1D;
+    padding: 10rem;
+
+
+    
+}
+
+footer h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+
+footer nav div{
+    display: inline-block;
+    
+
+   
+   
+
+}
+
+.contact{
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.contact img{
+    width: 10%;
+    
+    
+    
+}
+
+.contact img:hover{
+    filter: invert(100);
+    
+}
+
+
 
 
  
