@@ -13,9 +13,9 @@
       </div>
 
       <nav>
-        <a href="#" class="bar">Sobre</a>
-        <a href="#" class="bar">Projetos</a>
-        <a href="#" class="bar">Contato</a>
+        <a href="#about" class="bar">Sobre</a>
+        <a href="#projects" class="bar">Projetos</a>
+        <a href="#contact" class="bar">Contato</a>
       
       </nav>
     </header>
@@ -33,7 +33,7 @@
     </section>
 
     <div class="topics">
-      <span>Sobre Mim</span>
+      <span id="about">Sobre Mim</span>
     </div>
 
     <main class="biography">
@@ -50,13 +50,11 @@
           <img src="/assets/imagens/kingComputariaSemFundo2.png" alt="Rei das Programações">
         </picture>
         <!-- Qual a diferença de usar picture? tem atributos? -->
-
       </section>
- 
     </main>
 
       <span class="topics">
-        <p>Meus Projetos</p>
+        <p id="projects">Meus Projetos</p>
       </span>
 
     <!-- mudar e deixar mais semantico -->
@@ -94,21 +92,27 @@
     </main>
 
     <footer>
+      <h2 class="members">Membros</h2>
+      <h2 class="social" id="contact">Entre em contato</h2>
 
-      <h2>Entre em Contato</h2>
-      <nav>
-        <table>
-            <tr>
-              <th> <a href=""><img src="/assets/imagens/github.png" alt=""></a></th>
-              <th><a href=""><img src="/assets/imagens/github.png" alt=""></a></th>
-              
+        <nav class="navMembers">
+          <ul type="none">
+            <li><a href="/pages/rafael.html">Rafael Arcanjo</a></li>
+            <li><a href="/pages/Mauricio.html">Mauricio Lacerda</a></li>
+            <li><a href="/pages/Bernardo.html">Bernado Pinto</a></li>
+            <li><a href="/pages/emily.html">Emily Gonçalves</a></li>
 
-            </tr>
-        </table>
-        
 
-       
-      </nav> 
+          </ul>
+        </nav>
+      
+        <nav class="navSocial">
+          <a href=""><img src="/assets/imagens/github.png" alt="" class="imgSocial"></a>
+          <a href=""><img src="/assets/imagens/linkedin.png" alt="" class="imgSocial"></a>
+          <a href=""><img src="/assets/imagens/instagram.png" alt="" class="imgSocial"></a>
+
+        </nav>
+     
 
     </footer>
 
