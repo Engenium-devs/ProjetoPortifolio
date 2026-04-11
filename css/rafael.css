@@ -1,4 +1,165 @@
 body {
-  background-color: #f0f0f0;
+  background-color: #000000;
   font-family: Arial, sans-serif;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  padding-top: var(--height-header);
+}
+
+:root {
+  /* Variáveis de tema */
+  --bg-color: #0d0d0d; /* fundo do cabeçalho */
+  --border-color: #333333; /* borda superior sutil */
+  --text-color: #e5e5e5; /* cor do texto */
+  --highlight-color: #e5e5e5; /* cor de sublinhado ativo */
+  --height-header: 72px; /* altura fixa do cabeçalho */
+  --padding-horizontal: 20px; /* preenchimento lateral */
+  --logo-font: "Cinzel", serif; /* fonte do logo (serif condensada) */
+  --nav-font: "Roboto Condensed", sans-serif; /* fonte do menu (sem serifa) */
+  --font-size-logo: 24px;
+  --font-size-nav: 16px;
+  --underline-thickness: 2px;
+  --transition-speed: 0.3s;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: var(--height-header);
+  padding: 0 var(--padding-horizontal);
+  background-color: var(--bg-color);
+  border-top: 2px solid var(--border-color);
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.6); /* sombra interna discreta no topo */
+  display: flex;
+  align-items: center;
+  justify-content: center; /* centraliza o nav em relação ao header */
+  margin: 0;
+  padding: 0;
+}
+
+/* Logo à esquerda */
+.logo {
+  position: absolute;
+  left: var(--padding-horizontal);
+  font-family: var(--logo-font);
+  font-size: var(--font-size-logo);
+  color: var(--text-color);
+  line-height: var(--height-header);
+  text-transform: uppercase;
+}
+
+/* Menu de navegação */
+.nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: inline-flex;
+}
+
+.nav-list li {
+  margin: 0 12px;
+  position: relative;
+}
+
+/* Links do menu */
+.nav-list a {
+  display: inline-block;
+  font-family: var(--nav-font);
+  font-size: var(--font-size-nav);
+  color: var(--text-color);
+  text-decoration: none;
+  padding: 5px 10px;
+  text-align: center;
+  line-height: 1.2;
+  position: relative;
+  transition: color var(--transition-speed);
+}
+
+/* Animação de sublinhado ao hover/focus/ativo */
+.nav-list a::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 8px;
+  width: 0;
+  height: var(--underline-thickness);
+  background-color: var(--highlight-color);
+  border-radius: var(--underline-thickness);
+  transform: translateX(-50%);
+  transition: width var(--transition-speed);
+}
+.nav-list a:hover::before,
+.nav-list a:focus::before,
+.nav-list a.active::before {
+  width: 80%; /* sublinhado se expande a 80% da largura do texto */
+}
+
+/* Garante contorno visível em foco (WCAG 2.4.7) */
+.nav-list a:focus {
+  outline: 2px dotted var(--highlight-color);
+  outline-offset: 4px;
+}
+
+section {
+  background-color: rgba(214, 52, 25, 30%);
+  color: #f0e1b6;
+  border-radius: 10px;
+  border-color: #fbc131;
+  padding: 5px 20px;
+  text-align: center;
+  margin: 20px;
+}
+.perfil {
+  width: 220px;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(214, 52, 25, 30%);
+  color: #f0e1b6;
+  border-radius: 10px;
+  border-color: #fbc131;
+  padding: 5px 20px;
+  text-align: center;
+
+  margin: 20px;
+}
+
+table {
+  margin: 20px auto; /* ordem do margin: cima direita baixo esquerda */
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-size: 15px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Cabeçalho */
+th {
+  padding: 10px 15px;
+  background-color: #5a1207;
+  color: #fbc131;
+  text-align: left;
+  border-bottom: 2px solid #fbc131;
+}
+
+/* Células */
+td {
+  padding: 8px 15px;
+  border-bottom: 1px solid rgba(251, 193, 49, 0.3);
+}
+
+/* Zebra effect (linhas alternadas) */
+tr:nth-child(even) {
+  background-color: rgba(251, 193, 49, 0.05);
+}
+
+footer {
+  font-size: 12px;
+  text-align: center;
+  color: #ffffff;
 }
