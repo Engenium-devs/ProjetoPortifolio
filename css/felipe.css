@@ -34,16 +34,16 @@ header {
   
 }
 
-header div a.group{
-    display: inline-block;
+a {
     text-decoration: none;
     color: #E5E5E5;
-    font-family: 'Oswald', 'Cabin', sans-serif;
+     font-family: 'Oswald', 'Cabin', sans-serif;
+}
+
+header div a.group{
+    display: inline-block;
     font-size: 1.5rem;
     transition: 0.2s ease;
-    
-   
-    
 }
 
 header a.group:hover{
@@ -79,7 +79,7 @@ header a.bar:hover{
 }
 
 section#apresentation {
-   background-image: url("../assets/imagens/image.png");
+   background-image: url("../assets/imagens/felipeSobrevivente.png");
    background-position: top bottom;
    background-repeat: no-repeat;
    background-attachment: fixed;
@@ -121,11 +121,11 @@ span.name{
 }
 
 .topics::before, .topics::after {
-    content: "";
-    flex: 1;
+    content: ""; 
+    flex: 1;     
     height: 1px;
     background-color: #ccc;
-   
+   /* estudar melhor sobre */
 }
 
 .topics::after{
@@ -187,6 +187,7 @@ main#projectsContainer{
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
     align-items: center;
+    margin-bottom: 7rem;
     
 
 }
@@ -202,9 +203,7 @@ div.projectItem{
 /* criar uma tag propria pra n ficar zerando o main principal */
 /* Os mains estão puxando uma coisa da outra */
 
-section.projectContent picture img{
-    max-width: 100%;
-}
+
 
 section.projectContent {
     display: flex;
@@ -217,6 +216,7 @@ section.projectContent h1{
     margin: 1rem 0 2rem 0;
 
 }
+
 
 section.projectContent button{
 
@@ -234,9 +234,89 @@ section.projectContent button{
 section.projectContent button:hover{
     background-color: #E5E5E5;
     color: #E53326;
-    
-    border-radius: 3px
+    border-radius: 3px;
+    transform: scale(1.2)
 }
+
+footer{
+    background-image: url("/assets/imagens/image.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    filter: contrast(1.1);
+    max-width: 100%;
+    padding: 5rem;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+   
+}
+
+footer h2{
+   padding-bottom: 5rem;
+}
+
+footer h2.members {
+    grid-column: 1 / 2;
+    text-align: center;
+
+}
+
+footer h2.social {
+    grid-column: 2 / 2 ;
+    text-align: center;
+   
+}
+
+
+
+.navMembers{
+    grid-column: 2 / 1;
+    display: flex;
+    align-items: top;
+    justify-content: center;
+    line-height: 2.9rem;
+    font-size: 1.2rem;
+   
+}
+
+.navMembers a{
+    padding: 5px;
+    border: 1px solid transparent ;
+    transition: border-color 0.2s ease-in;
+    
+   
+}
+
+.navMembers a:hover{
+    padding: 5px;
+    border-bottom: 1px solid #E5E5E5
+}
+
+
+.navSocial{
+    display: flex;
+    justify-content: center;
+    align-items: top;
+}
+
+.imgSocial {
+    width: 4rem;
+    margin-left: 1rem;
+    filter: invert(100);
+    
+} 
+
+.imgSocial:hover{
+    transform: scale(1.2);
+    
+}
+
+
+
+
+
+
 
 
  
