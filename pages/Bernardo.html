@@ -4,74 +4,106 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfólio</title>
-    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/bernardo.css" />
   </head>
   <body>
     <header>
-      <img
-        src="../assets/imagens/Foto Bernardo.jpeg"
-        width="200px"
-        style="border-radius: 10%"
-      />
-      <h2>Bernardo Soares</h2>
-      <br />
-      <h3>Sou engenheiro do projeto</h3>
-      <hr />
+      <div class="logo">Engenium</div>
+      <nav aria-label="Menu principal">
+        <ul class="nav-list">
+          <a href="../index.html"><p>Main</p></a>
+          <li>
+            <a href="../pages/felipe.html"><p>Felipe Romero</p></a>
+          </li>
+          <li>
+            <a href="../pages/Mauricio.html"><p>Maurício Lacerda</p></a>
+          </li>
+          <li>
+            <a href="../pages/emily.html"><p>Emily Gonçalves</p></a>
+          </li>
+          <li>
+            <a href="../pages/rafael.html"><p>Rafael Arcanjo</p></a>
+          </li>
+        </ul>
+      </nav>
     </header>
-    <nav>
-      <a href="../index.html"><p>Main</p></a>
-      <h3>Integrantes</h3>
-      <a href="../pages/rafael.html"><p>Rafael Arcanjo</p></a>
-      <a href="../pages/emily.html"><p>Emily Gonçalves</p></a>
-      <a href="../pages/felipe.html"><p>Felipe Romero</p></a>
-      <a href="../pages/Mauricio.html"><p>Maurício Lacerda</p></a>
-      <a href="../pages/Bernardo.html"><p>Bernardo Soares</p></a>
-    </nav>
-    <main>
-      <article>
-        <p>
-          Meu nome é Bernardo Pinto Soares, tenho 18 anos, moro em Paraíba do
-          Sul e atualmente sou universitário na Universidade de Vassouras. Estou
-          atuando como o Engenheiro do projeto.
-        </p>
-        <audio controls src="../assets/audios/undaia-meme.mp3"></audio>
+    <main class="container">
+      <section id="primeira">
+        <h2>Sobre Mim</h2>
+        <hr />
+        <div class="card">
+          <img src="../assets/imagens/Foto Bernardo.jpeg" />
+          <p>
+            Meu nome é Bernardo Soares, tenho 18 anos e moro em Paraíba do Sul.
+            Estudei meu ensino médio na Escola Firjan SENAI/SESI, era um ensino
+            integral onde na parte da manhã era o ensino médio e na parte da
+            tarde o curso de Informática. Atualmente estou fazendo faculdade na
+            Universidade de Vassouras e faço parte do grupo Engenium, um grupo
+            composto por 7 integrantes (6 de Engenharia de Software e 1 de
+            Engenharia Civil). Gosto bastante de aprender coisas novas, assistir
+            séries e filmes, jogar videogames, fazer musculação e de coisas
+            relacionadas a computadores.
+          </p>
+        </div>
+      </section>
+      <section>
         <table>
-          <caption style="border: 1px solid">
-            Sobre Mim
+          <caption>
+            O que eu mais gosto?
           </caption>
           <tr>
-            <th style="border: 1px solid">Hobbies</th>
-            <th style="border: 1px solid">Projetos</th>
+            <th>Filmes/séries</th>
+            <th>Jogos</th>
+            <th>Música</th>
+            <th>Time</th>
+            <th>Esportes</th>
           </tr>
           <tr>
-            <td style="border: 1px solid">Jogar</td>
-            <td style="border: 1px solid">SDAT</td>
-          </tr>
-          <tr>
-            <td style="border: 1px solid">Ver séries</td>
-            <td style="border: 1px solid">Biodigestor</td>
+            <td>Gosto de estilo ação/aventura e às vezes um suspense</td>
+            <td>Jogo vários tipos de jogos</td>
+            <td>Sou eclético, ouço qualquer estilo musical</td>
+            <td>100% Flamengo</td>
+            <td>Gosto muito de futebol</td>
           </tr>
         </table>
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/ylGLMLAIki4?si=Cxk3nhk2MUY03QVL"
-          title="YouTube video player"
-          frameborder="0"
-          allow="
-            accelerometer;
-            autoplay;
-            clipboard-write;
-            encrypted-media;
-            gyroscope;
-            picture-in-picture;
-            web-share;
-          "
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-        ></iframe>
-      </article>
+        <br />
+        <div class="card2">
+          <img
+            src="../assets/imagens/The Chosen Os Escolhidos GIF - The chosen Os escolhidos Los elegidos - Descobrir e Compartilhar GIFs.gif"
+          />
+          <div class="textp-audio">
+            <h2>
+              Também sou Católico, fechadão com o cara que faz cego ver e mudo
+              falar.
+            </h2>
+            <audio controls>
+              <source
+                src="../assets/audios/vem-louvando-ó.mp3"
+                type="audio/mpeg"
+              />
+            </audio>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h2>Redes sociais</h2>
+        <hr />
+        <ul>
+          <li>
+            <a class="link" href="https://www.instagram.com/bernardosoares08/"
+              >Instagram</a
+            >
+          </li>
+          <li>
+            <a class="link" href="https://github.com/BernardoSoares07"
+              >GitHub</a
+            >
+          </li>
+        </ul>
+      </section>
     </main>
-    <footer>Engenium, 2026 ©</footer>
+    <footer>
+      <p>Engenium, 2026 ©</p>
+    </footer>
   </body>
 </html>
