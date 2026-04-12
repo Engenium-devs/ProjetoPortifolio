@@ -55,14 +55,8 @@ header a.bar {
     border-radius: 5px 5px 5px 0;
     transition: border-color 1s ease;
     border-bottom: 1px solid #E5E5E5;
-    
-    
-    /* border: 1px solid #E5E5E5; */
    
 }
-
-/* #1A1B1D */
-
 
 
 header a.bar:hover{
