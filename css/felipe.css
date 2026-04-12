@@ -16,13 +16,6 @@ body {
     font-optical-sizing: auto;
 }
 
-/* header {
-    background-color: #0D0D0D;
-    color: white;
-    display: flex;
-    padding: 1rem 1rem 0 1rem;
-  
-} */
 
 header {
     background-color: #0D0D0D;
@@ -239,7 +232,7 @@ section.projectContent button:hover{
 }
 
 footer{
-    background-image: url("/assets/imagens/image.png");
+    background-image: url("/assets/imagens/footerImage.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
