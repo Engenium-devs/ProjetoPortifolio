@@ -86,24 +86,39 @@ header h2 {
 
 
 .text1{
-    color: var(--secondBackColor);
-    animation: letterOpacity 4s ease;
+    color: transparent;
+    animation: letterOpacity1 4s ease forwards;
+    animation-delay: 1s;
    
 }
 .text2{
-    color: var(--fontColor);
-    animation: letterOpacity 4s ease;
+    color: transparent;
+    animation: letterOpacity2 4s ease forwards;
+    animation-delay: 1s;
 
 }
 
 /* Keyframe ridiculamente simples de opacidade */
-@keyframes letterOpacity{
-    100%{}
-    0%{
-        color: transparent;
-        
+@keyframes letterOpacity1{
+    to{
+        color: var(--secondBackColor);
+    }
+    from{
+       color: transparent;
+           
     }
 }
+
+@keyframes letterOpacity2{
+    to{
+        color: var(--secondBackColorItem);
+    }
+    from{
+       color: transparent;
+           
+    }
+}
+
 
 main{
     margin: 0 1rem 3rem 1rem;
@@ -124,6 +139,7 @@ aside {
     flex-direction: column;
     align-items: center;
     height: 100%;
+    margin-right: 6px;
     margin-bottom: 0.5rem;
    
 }
@@ -147,12 +163,12 @@ aside p {
     display: grid;
     grid-template-columns: 1fr 1fr;
     height: 100%;
+    gap: 7px;
   
 }
 
 .topics {
     background-color: var(--backColorItem);
-    margin: 0 0.1rem 0.5rem 0.5rem;
     padding: 1rem 1rem 3rem 1rem;
 }
 
@@ -194,6 +210,7 @@ aside p {
 .projectContainer{
     display: flex;
     flex-flow: row wrap;
+    gap: 10px;
 
 }
 
@@ -201,7 +218,7 @@ section.projectItem{
     background-color: var(--backColorItem);
     padding: 1rem;
     margin-top: 1rem;
-    border: solid 5px var(--backColor);
+   
   
     flex: 1 1 300px;
    
