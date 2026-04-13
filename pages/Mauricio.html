@@ -1,63 +1,233 @@
 <!doctype html>
-<html lang="pt-BR">
+<!-- Inspirado em: https://caioandres.dev -->
+<!-- Proximos passos: otimizar/Responsividade, terminar abas -->
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="../assets/icons/Icon.JPEG" type="image/x-icon" />
+    <link
+      rel="shortcut icon"
+      href="../assets/imagens/Maurício/Assets/Icon.png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Maurício Lacerda</title>
     <link rel="stylesheet" href="../css/Mauricio.css" />
-    <title>Maurício</title>
   </head>
   <body>
-    <section
-      style="
-        align-items: center;
-        justify-content: center;
-        margin: 0 auto;
-        text-align: center;
-      "
-    >
-      <h1 style="color: white">Maurício Lacerda</h1>
-      <a href="../index.html"><p>Main</p></a>
-      <h2
-        style="
-          color: white;
-          font-size: 20px;
-          font-family: &quot;Courier New&quot;, Courier, monospace;
-        "
-      >
-        Sem ideia de texto
-      </h2>
-    </section>
-    <hr style="width: 100%" />
-    <br />
-    <article>
-      <p style="color: white; font-size: 15px">Fazendo tabelas:</p>
-      <table>
-        <tr>
-          <th>1</th>
-          <th>2</th>
-          <th>3</th>
-        </tr>
-        <tr>
-          <td>Mauricio</td>
-          <td style="border: 1px solid">Lacerda</td>
-          <td>Novaes</td>
-        </tr>
-      </table>
-      <br /><br />
+    <div class="Engenium">
+      <div class="logo">Engenium</div>
+      <nav aria-label="Menu principal">
+        <ul class="nav-list">
+          <a href="../index.html"><p>Main</p></a>
+          <li>
+            <a href="../pages/felipe.html"><p>Felipe Romero</p></a>
+          </li>
+          <li>
+            <a href="../pages/Mauricio.html"><p>Maurício Lacerda</p></a>
+          </li>
+          <li>
+            <a href="../pages/emily.html"><p>Emily Gonçalves</p></a>
+          </li>
+          <li>
+            <a href="../pages/rafael.html"><p>Rafael Arcanjo</p></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="DivPrincipal">
+      <header class="Header ajustMau">
+        <div class="Heade">
+          <div class="Imagem">
+            <img
+              src="../assets/imagens/Maurício/Assets/Sheldon.JPEG"
+              alt="Pug Sheldon"
+              style="width: 130px; height: 130px; border-radius: 50%"
+            />
+          </div>
 
-      <p style="color: white; font-size: 15px">Imagens:</p>
-      <img
-        src="../assets/icons/Sheldon.JPEG"
-        alt="Pug Sheldon"
-        style="width: 10%; height: 10%"
-      />
-      <br /><br />
+          <div class="Infos">
+            <div class="areaS">
+              <img
+                src="../assets/imagens/Maurício/Assets/Icon.png"
+                alt="Icone Dev"
+                style="width: 18px; height: 18px"
+              />
+              <p class="soft">Software_Engineer</p>
+            </div>
 
-      <p style="color: white; font-size: 15px">Audios:</p>
-      <audio src="../assets/audios/musica.mp3" controls></audio>
-      <br /><br />
-      <br /><br /><br /><br />
-    </article>
+            <h1 class="Nome">
+              <span class="Codigo">&lt;</span>
+              Maurício Lacerda
+              <span class="Codigo">/&gt;</span>
+            </h1>
+
+            <p class="Sobre">
+              Estudante de Engenharia de Software com foco em desenvolvimento
+              mobile. Empreendedor no ramo da tecnologia e outros.
+            </p>
+          </div>
+
+          <div class="AreaLinks">
+            <a
+              href="https://github.com/mauriciolacerdan"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                src="../assets/imagens/Maurício/Assets/github-svgrepo-com.svg"
+                alt="GitHub"
+                style="width: 40px; height: 40px"
+              />
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/mauricio-lacerda-devmobile/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                src="../assets/imagens/Maurício/Assets/linkedin-svgrepo-com.svg"
+                alt="LinkedIn"
+                style="width: 35px; height: 35px"
+              />
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <div class="tabs">
+        <input type="radio" name="tab" id="about" checked />
+        <input type="radio" name="tab" id="exp" />
+        <input type="radio" name="tab" id="proj" />
+        <input type="radio" name="tab" id="cont" />
+
+        <div class="botoes">
+          <label for="about">[about]</label>
+          <!-- <label for="exp">[experience]</label> -->
+          <label for="proj">[projects]</label>
+          <label for="cont">[contact]</label>
+        </div>
+
+        <hr class="ho" />
+
+        <div class="conteudos">
+          <div class="conteudo about">
+            <div class="corr">
+              <div class="ajst">
+                <div class="abt Header">
+                  <span class="soft">SKILLS</span>
+                  <div class="Askills">
+                    <span class="skills soft Header">
+                      <img
+                        src="../assets/imagens/Maurício/Assets/html5-svgrepo-com.svg"
+                        alt="HTML"
+                        style="width: 12px; height: 12px"
+                      />
+                      HTML
+                    </span>
+                    <span class="skills soft Header">
+                      <img
+                        src="../assets/imagens/Maurício/Assets/css3-svgrepo-com.svg"
+                        alt="CSS"
+                        style="width: 12px; height: 12px"
+                      />
+                      CSS
+                    </span>
+                    <span class="skills soft Header">
+                      <img
+                        src="../assets/imagens/Maurício/Assets/javascript-1-svgrepo-com.svg"
+                        alt="JAVASCRIPT"
+                        style="width: 15px; height: 15px"
+                      />
+                      JavaScript
+                    </span>
+                    <span class="skills soft Header">
+                      <img
+                        src="../assets/imagens/Maurício/Assets/react-svgrepo-com.svg"
+                        alt="REACT"
+                        style="width: 15px; height: 15px"
+                      />
+                      ReactNative
+                    </span>
+                    <span class="skills soft Header">
+                      <img
+                        src="../assets/imagens/Maurício/Assets/expo-svgrepo-com.svg"
+                        alt="EXPO"
+                        style="width: 15px; height: 15px"
+                      />
+                      EXPO
+                    </span>
+                    <span class="skills soft Header">
+                      <img
+                        src="../assets/imagens/Maurício/Assets/firebase-svgrepo-com.svg"
+                        alt="FIREBASE"
+                        style="width: 15px; height: 15px"
+                      />
+                      Firebase
+                    </span>
+                  </div>
+                </div>
+
+                <div class="abt Header">
+                  <span class="soft">FORMAÇÃO</span>
+                  <div class="inf">
+                    <h3 class="til">Bacharelado em Engenharia de Software</h3>
+                    <span class="fac">Universidade Univassouras</span>
+                    <span class="data">Fev 2026</span>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <div class="abtP Header">
+                  <span class="soft spc">CERTIFICAÇÕES</span>
+                </div>
+
+                <div class="abtP Header">
+                  <span class="soft spc">CURSOS</span>
+                  <div class="corr">
+                    <img
+                      src="../assets/imagens/Maurício/Assets/ReactIcon.png"
+                      alt="React Icon"
+                      style="width: 50px; height: 50px; border-radius: 50%"
+                    />
+                    <div class="cor">
+                      <span class="til fab">Fábrica de Aplicativos</span>
+                      <span class="til sp"
+                        >Sujeito Programador - Matheus Fraga</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="conteudo exp">
+            <span class="til">Em desenvolvimento</span>
+          </div>
+
+          <div class="conteudo proj">
+            <span class="til">Em desenvolvimento</span>
+          </div>
+
+          <div class="conteudo cont">
+            <span class="til">Em desenvolvimento</span>
+          </div>
+        </div>
+
+        <hr class="hfin" />
+      </div>
+
+      <footer class="foot">
+        <span class="data"
+          >© 2026 Maurício Lacerda — todos os direitos reservados</span
+        >
+      </footer>
+    </div>
   </body>
 </html>
