@@ -9,6 +9,8 @@
 
 }
 
+/* Criar um root - Urgente */
+
 body {
     background-color: #0D0D0D;
     font-family: 'Cabin', sans-serif, Oswald;
@@ -17,52 +19,41 @@ body {
 }
 
 
-header {
-    background-color: #0D0D0D;
-    color: white;
+header{
+    width: 100%;
+    background-color: #0d0d0d;
+    color: #E5E5E5;
     display: grid;
     grid-template-columns: 1fr auto 1fr;
+    padding: 20px;
     align-items: center;
-    padding: 1rem 1rem 0.3rem 1rem;
-  
+
+}
+
+header h2 {
+    font-family: 'Cinzel', serif;
+    font-weight: lighter;
 }
 
 a {
     text-decoration: none;
     color: #E5E5E5;
-     font-family: 'Oswald', 'Cabin', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;;
+    
 }
 
-header div a.group{
-    display: inline-block;
-    font-size: 1.5rem;
-    transition: 0.2s ease;
-}
-
-header a.group:hover{
-    transform: scale(1.2,1.1);
-    transform-origin: left;
-}
-
-
-header a.bar {
+.member{
     text-decoration: none;
     color: #E5E5E5;
-    font-size: 1rem;
-    font-weight: bold;
-    padding: 5px 30px 5px 30px;
-    margin: 0 15px 0 15px;
-    border-radius: 5px 5px 5px 0;
-    transition: border-color 1s ease;
-    border-bottom: 1px solid #E5E5E5;
-   
+    margin-left: 3rem;
+    padding-bottom: 13px;
+    border-bottom: 2px solid  #0d0d0d;
+    transition: border-color 0.5s ease;
+    
 }
 
-
-header a.bar:hover{
-    border: 1px solid #E53326;
-    border-radius: 5px;
-   
+.member:hover{
+    border-bottom: 2px solid #E5E5E5 ;
 }
 
 section#apresentation {
@@ -72,8 +63,6 @@ section#apresentation {
    background-attachment: fixed;
    background-size: cover ;
    padding: 15rem 15rem 20rem 0;
-  
-
   
 }
 
@@ -166,7 +155,7 @@ picture img{
     max-width: 100%;
 
 }
-/* Aprender a usar unidades de medida corretamente */
+
 
 /*------------------------------ Projetos ----------------------------------*/
 main#projectsContainer{
@@ -188,9 +177,6 @@ div.projectItem{
     
 }
 /* criar uma tag propria pra n ficar zerando o main principal */
-/* Os mains estão puxando uma coisa da outra */
-
-
 
 section.projectContent {
     display: flex;
@@ -254,7 +240,6 @@ footer h2.social {
     text-align: center;
    
 }
-
 
 
 .navMembers{

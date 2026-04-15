@@ -17,9 +17,27 @@
     --fontColor: #E5E5E5;
     
     --fontFamily: 'Cabin', Arial, Helvetica, sans-serif;
+}
 
+/* Keyframe simples de opacidade */
+@keyframes letterOpacity1{
+    to{
+        color: var(--secondBackColor);
+    }
+    from{
+       color: transparent;
+           
+    }
+}
 
-
+@keyframes letterOpacity2{
+    to{
+        color: var(--secondBackColorItem);
+    }
+    from{
+       color: transparent;
+           
+    }
 }
 
 body{
@@ -98,30 +116,9 @@ header h2 {
 
 }
 
-/* Keyframe ridiculamente simples de opacidade */
-@keyframes letterOpacity1{
-    to{
-        color: var(--secondBackColor);
-    }
-    from{
-       color: transparent;
-           
-    }
-}
-
-@keyframes letterOpacity2{
-    to{
-        color: var(--secondBackColorItem);
-    }
-    from{
-       color: transparent;
-           
-    }
-}
-
 
 main{
-    margin: 0 1rem 3rem 1rem;
+    margin: 0 1rem 0 1rem;
 }
 
 .about{
@@ -140,7 +137,6 @@ aside {
     align-items: center;
     height: 100%;
     margin-right: 6px;
-    margin-bottom: 0.5rem;
    
 }
 
@@ -155,11 +151,9 @@ aside img{
 
 aside p {
     text-align: justify;
-
-
 }
 
-.conteinerTopics{
+.conteinerStrengths{
     display: grid;
     grid-template-columns: 1fr 1fr;
     height: 100%;
@@ -167,12 +161,12 @@ aside p {
   
 }
 
-.topics {
+.strengths {
     background-color: var(--backColorItem);
     padding: 1rem 1rem 3rem 1rem;
 }
 
-.topics h2{
+.strengths h2{
     font-family: 'Oswald', Arial, Helvetica, sans-serif;
     text-align: justify;
     margin-left: 10px;
@@ -182,15 +176,15 @@ aside p {
 /*------------------Projetos-------------------*/
 
 
-.projectTopic{
+.topic{
     display: flex;
     align-items: center;
-    margin-left: 1rem;
+    margin: 2rem 0 2rem 1rem;
     width: 97.4%;
 
 }
 
-.projectTopic::after{
+.topic::after{
     content: " ";
     flex: 1;
     height: 1px;
@@ -200,7 +194,7 @@ aside p {
 /* entender isso melhor */
 
 
-.projectTopic h1{
+.topic h1{
     font-family: 'Oswald', Arial, Helvetica, sans-serif;
     padding-right: 1rem;
     margin-right: 0rem;
@@ -208,8 +202,9 @@ aside p {
 }
 
 .projectContainer{
-    display: flex;
-    flex-flow: row wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr ));
+    /* coloca quantas colunas puder, com o minimo de x e max de y */
     gap: 10px;
 
 }
@@ -217,24 +212,106 @@ aside p {
 section.projectItem{
     background-color: var(--backColorItem);
     padding: 1rem;
+    max-width: 100%;
     margin-top: 1rem;
-   
-  
-    flex: 1 1 300px;
    
 
 }
 
 .projectItem h2{
     padding: 10px;
-
 }
 
 .projectItem img{
-    max-width: 362px;
+    max-width: 100%;
+    height: auto;
     margin-bottom: 20px;
 
 }
+
+section.stack{
+    background-color: var(--backColorItem);
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    height: auto;
+    border: 1px solid transparent;
+    transition: border-color 0.2s ease;
+    margin-bottom: 3rem;
+
+}
+
+section.stack:hover{
+    border-top: 1px solid #555;
+    border-bottom: 1px solid #555;
+}
+
+.containerStack{
+    width: 50px;
+    height: auto;
+    color: #555;
+
+}
+
+.icon{
+    fill: currentColor;
+    max-width: 100%;
+    transition: transform 0.2s ease;
+    
+}
+.iconHtml:hover{
+    transform: translateY(-10px);
+    color: #E34C26;
+
+}
+
+.iconCss:hover{
+    transform: translateY(-10px);
+    color: #264de4;
+   
+}
+
+.iconGithub:hover{
+    transform: translateY(-10px);
+    color: #6e5494;
+
+}
+
+footer{
+    background-image: url("/assets/imagens/footerImage.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    filter: contrast(1.1);
+    max-width: 100%;
+    height: 25rem;
+    border-top: 1px solid #555;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+table{
+    width: 20rem;
+}
+
+table tr{
+    text-align: center;
+}
+
+
+table tr td{
+    padding: 10px;
+}
+
+
+
+
+
+
 
 
 
