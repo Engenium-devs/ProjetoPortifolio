@@ -3,36 +3,36 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Felipe Romero</title>
+    <link rel="stylesheet" href="/css/nav_standerdized.css" />
     <link rel="stylesheet" href="/css/felipe.css" />
+    
   </head>
   <body>
-    <!-- <header>
-      <div>
-        <a href="../index.html" class="group">Engenium</a>
-      </div>
-
-      <nav>
-        <a href="#about" class="bar">Sobre</a>
-        <a href="#projects" class="bar">Projetos</a>
-        <a href="#contact" class="bar">Contato</a>
-      
-      </nav>
-    </header> -->
-
-    <header>
-      <h2>ENGENIUM</h2>
-
-      <nav>
-        <a href="/index.html" class="member">Menu</a>
-        <a href="/pages/Mauricio.html" class="member">Mauricio Lacerda</a>
-        <a href="/pages/Bernardo.html" class="member">Bernado Pinto</a>
-        <a href="/pages/emily.html" class="member">Emily Gonçalves</a>
-        <a href="/pages/rafael.html" class="member">Rafael Arcanjo</a>
+    <header class="Engenium">
+      <div class="logo">Engenium</div>
+      <nav class="main">
+        <ul class="nav-list">
+          <li>
+          <a href="../index.html"><p>Main</p></a>
+          </li>
+          <li>
+            <a href="../pages/Bernardo.html"><p>Bernardo Soares</p></a>
+          </li>
+          <li>
+            <a href="../pages/Mauricio.html"><p>Maurício Lacerda</p></a>
+          </li>
+          <li>
+            <a href="../pages/emily.html"><p>Emily Gonçalves</p></a>
+          </li>
+          <li>
+            <a href="../pages/rafael.html"><p>Rafael Arcanjo</p></a>
+          </li>
+        </ul>
       </nav>
     </header>
 
-    <section id="apresentation">
+   <section id="apresentation">
       <div class="slogan">
         <p class="text">
           <span class="name">FELIPE</span>
@@ -64,41 +64,35 @@
       </section>
     </main>
 
-      <span class="topics">
-        <p id="projects">Meus Projetos</p>
-      </span>
+    <span class="topics">
+      <p id="projects">Meus Projetos</p>
+    </span>
 
-    <!-- mudar e deixar mais semantico -->
-    <main id="projectsContainer"> 
-      <div class="projectItem">  
-        <section class="projectContent">
+   
+    <main id="projects-container"> 
+      <div class="project-item">  
           <picture>
             <img src="/assets/imagens/computadorComMão.png" alt="">
           </picture>
           <h1>Batalha Naval - JAVA</h1>
           <button type="button" onclick="window.location.href='https://github.com/romeroflp/BattleShip-War'">Ver Mais</button>
-        </section>
       </div>
 
-      <div class="projectItem">
-        <section class="projectContent">
-          <picture>
-            <img src="/assets/imagens/imageCerebro.png" alt="">
-          </picture>
-          <h1>E-commerce</h1>
-          <button type="button" onclick="window.location.href='https://github.com/romeroflp/OrderSystem'">Ver Mais</button>
-        </section>
+      <div class="project-item">
+        <picture>
+          <img src="/assets/imagens/imageCerebro.png" alt="">
+        </picture>
+        <h1>E-commerce</h1>
+        <button type="button" onclick="window.location.href='https://github.com/romeroflp/OrderSystem'">Ver Mais</button>
       </div>
       
 
-      <div class="projectItem">
-        <section class="projectContent">
-          <picture>
-            <img src="/assets/imagens/hackerEncarandoTela.png" alt="">
-          </picture>
-          <h1>Vertx</h1>
-          <button type="button" onclick="window.location.href='https://github.com/romeroflp/HttpProtocol-Vertx'">Ver Mais</button>
-        </section>
+      <div class="project-item">
+        <picture>
+          <img src="/assets/imagens/hackerEncarandoTela.png" alt="">
+        </picture>
+        <h1>Vertx</h1>
+        <button type="button" onclick="window.location.href='https://github.com/romeroflp/HttpProtocol-Vertx'">Ver Mais</button>
       </div>
     </main>
 
@@ -106,7 +100,7 @@
       <h2 class="members">Membros</h2>
       <h2 class="social" id="contact">Entre em contato</h2>
 
-      <nav class="navMembers">
+      <nav class="nav-members">
         <ul type="none">
           <li><a href="/pages/rafael.html">Rafael Arcanjo</a></li>
           <li><a href="/pages/Mauricio.html">Mauricio Lacerda</a></li>
@@ -116,12 +110,11 @@
         </ul>
       </nav>
       
-      <nav class="navSocial">
-        <a href="https://github.com/romeroflp" target="_blank"><img src="/assets/imagens/github.png" alt="" class="imgSocial"></a>
-        <a href="https://www.linkedin.com/company/ceoofx" target="_blank"><img src="/assets/imagens/linkedin.png" alt="" class="imgSocial"></a>
-        <a href="https://www.instagram.com/feliperom__/" target="_blank"><img src="/assets/imagens/instagram.png" alt="" class="imgSocial"></a>
+      <nav class="nav-social">
+        <a href="https://github.com/romeroflp" target="_blank"><img src="/assets/imagens/github.png" alt="" class="img-social"></a>
+        <a href="https://www.linkedin.com/company/ceoofx" target="_blank"><img src="/assets/imagens/linkedin.png" alt="" class="img-social"></a>
+        <a href="https://www.instagram.com/feliperom__/" target="_blank"><img src="/assets/imagens/instagram.png" alt="" class="img-social"></a>
       </nav>
-     
     </footer>
 
   </body>

@@ -2,6 +2,19 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+
+:root{
+    --back-color: #0D0D0D;
+    --back-color-item: #1A1B1D;
+    --second-back-color: #E5E5E5; 
+    --fontcolor: #E5E5E5;
+    --fontcolor-slogan: #E53326;
+    --bordercolor: #E53326;
+    --second-bordercolor: #555;
+    
+
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -9,52 +22,24 @@
 
 }
 
-/* Criar um root - Urgente */
-
 body {
-    background-color: #0D0D0D;
+    background-color: var(--back-color);
     font-family: 'Cabin', sans-serif, Oswald;
-    color: #E5E5E5;
+    color: var(--fontcolor);
     font-optical-sizing: auto;
 }
 
-
-header{
-    width: 100%;
-    background-color: #0d0d0d;
-    color: #E5E5E5;
-    display: grid;
-    grid-template-columns: 1fr auto 1fr;
-    padding: 20px;
-    align-items: center;
-
-}
-
-header h2 {
-    font-family: 'Cinzel', serif;
-    font-weight: lighter;
-}
-
-a {
+a{
+    color: var(--fontcolor);
     text-decoration: none;
-    color: #E5E5E5;
-    font-family: "Roboto Condensed", sans-serif;;
-    
+    font-family: "Roboto Condensed", sans-serif;
 }
 
-.member{
-    text-decoration: none;
-    color: #E5E5E5;
-    margin-left: 3rem;
-    padding-bottom: 13px;
-    border-bottom: 2px solid  #0d0d0d;
-    transition: border-color 0.5s ease;
-    
+.nav-list a::before{
+    bottom: -8px;
 }
+/* Sobrescrevendo posição, já que o seletor universal dessa pagina está zerado */
 
-.member:hover{
-    border-bottom: 2px solid #E5E5E5 ;
-}
 
 section#apresentation {
    background-image: url("../assets/imagens/felipeSobrevivente.png");
@@ -67,22 +52,23 @@ section#apresentation {
 }
 
 div.slogan {
-    font-size: 2rem;
-    font-family: "Oswald", "Roboto", sans-serif;
-    font-weight: bold;
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: center;
+
+    font-size: 2rem;
+    font-family: "Oswald", "Roboto", sans-serif;
+    font-weight: bold;
+   
 }
 
 .text {
     font-size: 1.2rem;
-    color: #E5E5E5;
 }
 
 span.name{
-    color:  #E53326;
+    color: var(--fontcolor-slogan);
 }
 
 
@@ -92,6 +78,7 @@ span.name{
     justify-content: center;
     padding: 0.7rem;
     margin: 1rem 0 1rem 0;
+
     font-size: 1.2rem;
     font-weight: bold;
 }
@@ -101,7 +88,6 @@ span.name{
     flex: 1;     
     height: 1px;
     background-color: #ccc;
-   /* estudar melhor sobre */
 }
 
 .topics::after{
@@ -121,14 +107,12 @@ span {
     font-weight: bold;
 }
 
-
-
 main.biography{
     gap: 1.5rem;
     margin: 0 4rem 0 4rem;
     padding: 20px;
-    background-color: #1A1B1D;
-    border: 1px solid #E53326;
+    background-color: var(--back-color-item);
+    border: 1px solid var(--bordercolor);
     border-radius: 3px;
     text-align: justify;
 
@@ -158,55 +142,51 @@ picture img{
 
 
 /*------------------------------ Projetos ----------------------------------*/
-main#projectsContainer{
+main#projects-container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
     align-items: center;
-    margin-bottom: 7rem;
-    
 
+    margin-bottom: 7rem;
 }
 
-div.projectItem{
-    background-color: #1A1B1D;
+div.project-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: var(--back-color-item);
     margin: 1rem 2rem 1rem 2rem;
     padding: 3px 3px 10px 3px;
-    border: 1px solid #E53326; 
+    border: 1px solid var(--bordercolor); 
     max-width: 300px;
     
 }
-/* criar uma tag propria pra n ficar zerando o main principal */
 
-section.projectContent {
-    display: flex;
-    flex-direction: column;
-    
-}
-
-section.projectContent h1{
+div.project-item h1{
+    text-align: center;
     font-size: 1.5rem;
     margin: 1rem 0 2rem 0;
-
 }
 
+div.project-item button{
+    background-color: var(--back-color-item);
+    color: var(--fontcolor);
+    font-weight: bolder;
 
-section.projectContent button{
-
-    background-color: #1A1B1D;
-    color: #E5E5E5;
-    font-weight: bolder ;
     max-width: 5rem;
     margin-bottom: 1rem;
     padding: 10px;
+
     border-radius: 3px;
-    border: 1px solid #E5E5E5;
+    border: 1px solid var(--second-back-color);
     transition: 0.3s ease;
 }
 
-section.projectContent button:hover{
-    background-color: #E5E5E5;
-    color: #E53326;
+div.project-item button:hover{
+    background-color: var(--second-back-color);
+    color: var(--bordercolor);
     border-radius: 3px;
     transform: scale(1.2)
 }
@@ -219,6 +199,7 @@ footer{
     filter: contrast(1.1);
     max-width: 100%;
     padding: 5rem;
+    border-top: 1px solid var(--second-bordercolor);
 
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -241,18 +222,18 @@ footer h2.social {
    
 }
 
-
-.navMembers{
+.nav-members{
     grid-column: 2 / 1;
     display: flex;
     align-items: top;
     justify-content: center;
     line-height: 2.9rem;
     font-size: 1.2rem;
+
    
 }
 
-.navMembers a{
+.nav-members a{
     padding: 5px;
     border: 1px solid transparent ;
     transition: border-color 0.2s ease-in;
@@ -260,31 +241,30 @@ footer h2.social {
    
 }
 
-.navMembers a:hover{
+.nav-members a:hover{
     padding: 5px;
-    border-bottom: 1px solid #E5E5E5
+    border-bottom: 1px solid var(--second-back-color);
 }
 
 
-.navSocial{
+.nav-social{
     display: flex;
     justify-content: center;
     align-items: top;
+    
 }
 
-.imgSocial {
+.img-social {
     width: 4rem;
     margin-left: 1rem;
     filter: invert(100);
+    transition: transform 0.2s ease;
     
 } 
 
-.imgSocial:hover{
+.img-social:hover{
     transform: scale(1.2);
-    
 }
-
-
 
 
 
